@@ -1,0 +1,1294 @@
+<object-stream>
+  <linked-list>
+    <de.devboost.natspec.testscripting.patterns.DynamicSyntaxPattern>
+      <parameterFactory class="de.devboost.natspec.testscripting.java.extract.JavaParameterFactory"/>
+      <projectName>com.nat-spec.examples.airline.services</projectName>
+      <qualifiedTypeName>com.nat_spec.examples.airline.services.validator.ValidationSupport</qualifiedTypeName>
+      <methodName>checkUniquePassenger</methodName>
+      <parts class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+        <c class="list">
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>Each</text>
+            <wordMatcher>
+              <text>Each</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>Passenger</text>
+            <wordMatcher>
+              <text>Passenger</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>can</text>
+            <wordMatcher>
+              <text>can</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>only</text>
+            <wordMatcher>
+              <text>only</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>be</text>
+            <wordMatcher>
+              <text>be</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>booked</text>
+            <wordMatcher>
+              <text>booked</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>once.</text>
+            <wordMatcher>
+              <text>once.</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+        </c>
+        <list reference="../c"/>
+      </parts>
+      <partToParameterIndexMap class="linked-hash-map"/>
+      <parameters/>
+      <codeGeneratorFactory class="de.devboost.natspec.testscripting.java.extract.JavaCodeGeneratorFactory"/>
+    </de.devboost.natspec.testscripting.patterns.DynamicSyntaxPattern>
+    <de.devboost.natspec.testscripting.patterns.DynamicSyntaxPattern>
+      <parameterFactory class="de.devboost.natspec.testscripting.java.extract.JavaParameterFactory" reference="../../de.devboost.natspec.testscripting.patterns.DynamicSyntaxPattern/parameterFactory"/>
+      <projectName>com.nat-spec.examples.airline.services</projectName>
+      <qualifiedTypeName>com.nat_spec.examples.airline.services.validator.ValidationSupport</qualifiedTypeName>
+      <methodName>checkFreeSeats</methodName>
+      <parts class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+        <c class="list">
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>There</text>
+            <wordMatcher>
+              <text>There</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>should</text>
+            <wordMatcher>
+              <text>should</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>be</text>
+            <wordMatcher>
+              <text>be</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>at</text>
+            <wordMatcher>
+              <text>at</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>least</text>
+            <wordMatcher>
+              <text>least</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.patterns.parts.IntegerArgument/>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>free</text>
+            <wordMatcher>
+              <text>free</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>seats</text>
+            <wordMatcher>
+              <text>seats</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>to</text>
+            <wordMatcher>
+              <text>to</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>handle</text>
+            <wordMatcher>
+              <text>handle</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>overbooking.</text>
+            <wordMatcher>
+              <text>overbooking.</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+        </c>
+        <list reference="../c"/>
+      </parts>
+      <partToParameterIndexMap class="linked-hash-map">
+        <entry>
+          <de.devboost.natspec.patterns.parts.IntegerArgument reference="../../../parts/c/de.devboost.natspec.patterns.parts.IntegerArgument"/>
+          <int>0</int>
+        </entry>
+      </partToParameterIndexMap>
+      <parameters>
+        <de.devboost.natspec.testscripting.java.model.JavaParameter>
+          <name>overbookingBuffer</name>
+          <type>
+            <qualifiedName>int</qualifiedName>
+            <typeArguments/>
+            <superTypes class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+              <c class="empty-list"/>
+              <list class="empty-list"/>
+            </superTypes>
+            <allSuperTypeNames class="linked-hash-set">
+              <string>int</string>
+            </allSuperTypeNames>
+          </type>
+          <annotations/>
+        </de.devboost.natspec.testscripting.java.model.JavaParameter>
+      </parameters>
+      <codeGeneratorFactory class="de.devboost.natspec.testscripting.java.extract.JavaCodeGeneratorFactory" reference="../../de.devboost.natspec.testscripting.patterns.DynamicSyntaxPattern/codeGeneratorFactory"/>
+    </de.devboost.natspec.testscripting.patterns.DynamicSyntaxPattern>
+    <de.devboost.natspec.testscripting.patterns.DynamicSyntaxPattern>
+      <parameterFactory class="de.devboost.natspec.testscripting.java.extract.JavaParameterFactory" reference="../../de.devboost.natspec.testscripting.patterns.DynamicSyntaxPattern/parameterFactory"/>
+      <projectName>com.nat-spec.examples.airline.services</projectName>
+      <qualifiedTypeName>com.nat_spec.examples.airline.services.validator.ValidationSupport</qualifiedTypeName>
+      <methodName>checkFreeSeats</methodName>
+      <parts class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+        <c class="list">
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>There</text>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>needs</text>
+            <wordMatcher>
+              <text>needs</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>to</text>
+            <wordMatcher>
+              <text>to</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>be</text>
+            <wordMatcher>
+              <text>be</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>a</text>
+            <wordMatcher>
+              <text>a</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>free</text>
+            <wordMatcher>
+              <text>free</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>seat</text>
+            <wordMatcher>
+              <text>seat</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>for</text>
+            <wordMatcher>
+              <text>for</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>the</text>
+            <wordMatcher>
+              <text>the</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>passenger.</text>
+            <wordMatcher>
+              <text>passenger.</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+        </c>
+        <list reference="../c"/>
+      </parts>
+      <partToParameterIndexMap class="linked-hash-map"/>
+      <parameters/>
+      <codeGeneratorFactory class="de.devboost.natspec.testscripting.java.extract.JavaCodeGeneratorFactory" reference="../../de.devboost.natspec.testscripting.patterns.DynamicSyntaxPattern/codeGeneratorFactory"/>
+    </de.devboost.natspec.testscripting.patterns.DynamicSyntaxPattern>
+    <de.devboost.natspec.testscripting.patterns.DynamicSyntaxPattern>
+      <parameterFactory class="de.devboost.natspec.testscripting.java.extract.JavaParameterFactory" reference="../../de.devboost.natspec.testscripting.patterns.DynamicSyntaxPattern/parameterFactory"/>
+      <projectName>com.nat-spec.examples.airline.tests</projectName>
+      <qualifiedTypeName>com.nat_spec.examples.airline.test.TestSupport</qualifiedTypeName>
+      <methodName>setAge</methodName>
+      <parts class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+        <c class="list">
+          <de.devboost.natspec.testscripting.patterns.parts.ImplicitParameter>
+            <qualifiedTypeName>com.nat_spec.examples.airline.persistence.entity.Passenger</qualifiedTypeName>
+            <simpleTypeName>Passenger</simpleTypeName>
+            <considerLastObjectOnly>false</considerLastObjectOnly>
+          </de.devboost.natspec.testscripting.patterns.parts.ImplicitParameter>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>With</text>
+            <wordMatcher>
+              <text>With</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>age</text>
+            <wordMatcher>
+              <text>age</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>of</text>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.patterns.parts.IntegerArgument/>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>years</text>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+        </c>
+        <list reference="../c"/>
+      </parts>
+      <partToParameterIndexMap class="linked-hash-map">
+        <entry>
+          <de.devboost.natspec.patterns.parts.IntegerArgument reference="../../../parts/c/de.devboost.natspec.patterns.parts.IntegerArgument"/>
+          <int>1</int>
+        </entry>
+        <entry>
+          <de.devboost.natspec.testscripting.patterns.parts.ImplicitParameter reference="../../../parts/c/de.devboost.natspec.testscripting.patterns.parts.ImplicitParameter"/>
+          <int>0</int>
+        </entry>
+      </partToParameterIndexMap>
+      <parameters>
+        <de.devboost.natspec.testscripting.java.model.JavaParameter>
+          <name>passenger</name>
+          <type>
+            <qualifiedName>com.nat_spec.examples.airline.persistence.entity.Passenger</qualifiedName>
+            <typeArguments/>
+            <superTypes class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+              <c class="empty-list"/>
+              <list class="empty-list"/>
+            </superTypes>
+            <allSuperTypeNames class="linked-hash-set">
+              <string>com.nat_spec.examples.airline.persistence.entity.Passenger</string>
+            </allSuperTypeNames>
+          </type>
+          <annotations/>
+        </de.devboost.natspec.testscripting.java.model.JavaParameter>
+        <de.devboost.natspec.testscripting.java.model.JavaParameter>
+          <name>age</name>
+          <type>
+            <qualifiedName>int</qualifiedName>
+            <typeArguments/>
+            <superTypes class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+              <c class="empty-list"/>
+              <list class="empty-list"/>
+            </superTypes>
+            <allSuperTypeNames class="linked-hash-set">
+              <string>int</string>
+            </allSuperTypeNames>
+          </type>
+          <annotations/>
+        </de.devboost.natspec.testscripting.java.model.JavaParameter>
+      </parameters>
+      <codeGeneratorFactory class="de.devboost.natspec.testscripting.java.extract.JavaCodeGeneratorFactory" reference="../../de.devboost.natspec.testscripting.patterns.DynamicSyntaxPattern/codeGeneratorFactory"/>
+    </de.devboost.natspec.testscripting.patterns.DynamicSyntaxPattern>
+    <de.devboost.natspec.testscripting.patterns.DynamicSyntaxPattern>
+      <parameterFactory class="de.devboost.natspec.testscripting.java.extract.JavaParameterFactory" reference="../../de.devboost.natspec.testscripting.patterns.DynamicSyntaxPattern/parameterFactory"/>
+      <projectName>com.nat-spec.examples.airline.tests</projectName>
+      <qualifiedTypeName>com.nat_spec.examples.airline.test.TestSupport</qualifiedTypeName>
+      <methodName>assumeFailure</methodName>
+      <parts class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+        <c class="list">
+          <de.devboost.natspec.testscripting.patterns.parts.ImplicitParameter>
+            <qualifiedTypeName>com.nat_spec.examples.airline.services.OperationStatus</qualifiedTypeName>
+            <simpleTypeName>OperationStatus</simpleTypeName>
+            <considerLastObjectOnly>false</considerLastObjectOnly>
+          </de.devboost.natspec.testscripting.patterns.parts.ImplicitParameter>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>Assume</text>
+            <wordMatcher>
+              <text>Assume</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>no</text>
+            <wordMatcher>
+              <text>no</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>valid</text>
+            <wordMatcher>
+              <text>valid</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>ticket</text>
+            <wordMatcher>
+              <text>ticket</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>is</text>
+            <wordMatcher>
+              <text>is</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>issued</text>
+            <wordMatcher>
+              <text>issued</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+        </c>
+        <list reference="../c"/>
+      </parts>
+      <partToParameterIndexMap class="linked-hash-map">
+        <entry>
+          <de.devboost.natspec.testscripting.patterns.parts.ImplicitParameter reference="../../../parts/c/de.devboost.natspec.testscripting.patterns.parts.ImplicitParameter"/>
+          <int>0</int>
+        </entry>
+      </partToParameterIndexMap>
+      <parameters>
+        <de.devboost.natspec.testscripting.java.model.JavaParameter>
+          <name>status</name>
+          <type>
+            <qualifiedName>com.nat_spec.examples.airline.services.OperationStatus</qualifiedName>
+            <typeArguments/>
+            <superTypes class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+              <c class="empty-list"/>
+              <list class="empty-list"/>
+            </superTypes>
+            <allSuperTypeNames class="linked-hash-set">
+              <string>com.nat_spec.examples.airline.services.OperationStatus</string>
+            </allSuperTypeNames>
+          </type>
+          <annotations/>
+        </de.devboost.natspec.testscripting.java.model.JavaParameter>
+      </parameters>
+      <codeGeneratorFactory class="de.devboost.natspec.testscripting.java.extract.JavaCodeGeneratorFactory" reference="../../de.devboost.natspec.testscripting.patterns.DynamicSyntaxPattern/codeGeneratorFactory"/>
+    </de.devboost.natspec.testscripting.patterns.DynamicSyntaxPattern>
+    <de.devboost.natspec.testscripting.patterns.DynamicSyntaxPattern>
+      <parameterFactory class="de.devboost.natspec.testscripting.java.extract.JavaParameterFactory" reference="../../de.devboost.natspec.testscripting.patterns.DynamicSyntaxPattern/parameterFactory"/>
+      <projectName>com.nat-spec.examples.airline.tests</projectName>
+      <qualifiedTypeName>com.nat_spec.examples.airline.test.TestSupport</qualifiedTypeName>
+      <methodName>hasPassenger</methodName>
+      <parts class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+        <c class="list">
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>Assume</text>
+            <wordMatcher>
+              <text>Assume</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.testscripting.patterns.parts.ComplexParameter>
+            <qualifiedTypeName>com.nat_spec.examples.airline.persistence.entity.Flight</qualifiedTypeName>
+            <simpleTypeName>Flight</simpleTypeName>
+          </de.devboost.natspec.testscripting.patterns.parts.ComplexParameter>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>has</text>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>passenger</text>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.testscripting.patterns.parts.ComplexParameter>
+            <qualifiedTypeName>com.nat_spec.examples.airline.persistence.entity.Passenger</qualifiedTypeName>
+            <simpleTypeName>Passenger</simpleTypeName>
+          </de.devboost.natspec.testscripting.patterns.parts.ComplexParameter>
+        </c>
+        <list reference="../c"/>
+      </parts>
+      <partToParameterIndexMap class="linked-hash-map">
+        <entry>
+          <de.devboost.natspec.testscripting.patterns.parts.ComplexParameter reference="../../../parts/c/de.devboost.natspec.testscripting.patterns.parts.ComplexParameter"/>
+          <int>0</int>
+        </entry>
+        <entry>
+          <de.devboost.natspec.testscripting.patterns.parts.ComplexParameter reference="../../../parts/c/de.devboost.natspec.testscripting.patterns.parts.ComplexParameter[2]"/>
+          <int>1</int>
+        </entry>
+      </partToParameterIndexMap>
+      <parameters>
+        <de.devboost.natspec.testscripting.java.model.JavaParameter>
+          <name>flight</name>
+          <type>
+            <qualifiedName>com.nat_spec.examples.airline.persistence.entity.Flight</qualifiedName>
+            <typeArguments/>
+            <superTypes class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+              <c class="empty-list"/>
+              <list class="empty-list"/>
+            </superTypes>
+            <allSuperTypeNames class="linked-hash-set">
+              <string>com.nat_spec.examples.airline.persistence.entity.Flight</string>
+            </allSuperTypeNames>
+          </type>
+          <annotations/>
+        </de.devboost.natspec.testscripting.java.model.JavaParameter>
+        <de.devboost.natspec.testscripting.java.model.JavaParameter>
+          <name>passenger</name>
+          <type>
+            <qualifiedName>com.nat_spec.examples.airline.persistence.entity.Passenger</qualifiedName>
+            <typeArguments/>
+            <superTypes class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+              <c class="empty-list"/>
+              <list class="empty-list"/>
+            </superTypes>
+            <allSuperTypeNames class="linked-hash-set">
+              <string>com.nat_spec.examples.airline.persistence.entity.Passenger</string>
+            </allSuperTypeNames>
+          </type>
+          <annotations/>
+        </de.devboost.natspec.testscripting.java.model.JavaParameter>
+      </parameters>
+      <codeGeneratorFactory class="de.devboost.natspec.testscripting.java.extract.JavaCodeGeneratorFactory" reference="../../de.devboost.natspec.testscripting.patterns.DynamicSyntaxPattern/codeGeneratorFactory"/>
+    </de.devboost.natspec.testscripting.patterns.DynamicSyntaxPattern>
+    <de.devboost.natspec.testscripting.patterns.DynamicSyntaxPattern>
+      <parameterFactory class="de.devboost.natspec.testscripting.java.extract.JavaParameterFactory" reference="../../de.devboost.natspec.testscripting.patterns.DynamicSyntaxPattern/parameterFactory"/>
+      <projectName>com.nat-spec.examples.airline.tests</projectName>
+      <qualifiedTypeName>com.nat_spec.examples.airline.test.TestSupport</qualifiedTypeName>
+      <methodName>bookSeat</methodName>
+      <returnType class="de.devboost.natspec.testscripting.java.model.JavaType">
+        <qualifiedName>com.nat_spec.examples.airline.services.OperationStatus</qualifiedName>
+        <typeArguments/>
+        <superTypes class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+          <c class="list">
+            <de.devboost.natspec.testscripting.java.model.JavaType>
+              <qualifiedName>java.lang.Object</qualifiedName>
+              <typeArguments class="empty-list"/>
+              <superTypes class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+                <c class="list"/>
+                <list reference="../c"/>
+              </superTypes>
+            </de.devboost.natspec.testscripting.java.model.JavaType>
+          </c>
+          <list reference="../c"/>
+        </superTypes>
+        <allSuperTypeNames class="linked-hash-set">
+          <string>com.nat_spec.examples.airline.services.OperationStatus</string>
+          <string>java.lang.Object</string>
+        </allSuperTypeNames>
+      </returnType>
+      <parts class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+        <c class="list">
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>Book</text>
+            <wordMatcher>
+              <text>Book</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>seat</text>
+            <wordMatcher>
+              <text>seat</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>for</text>
+            <wordMatcher>
+              <text>for</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.testscripting.patterns.parts.ComplexParameter>
+            <qualifiedTypeName>com.nat_spec.examples.airline.persistence.entity.Passenger</qualifiedTypeName>
+            <simpleTypeName>Passenger</simpleTypeName>
+          </de.devboost.natspec.testscripting.patterns.parts.ComplexParameter>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>at</text>
+            <wordMatcher>
+              <text>at</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.testscripting.patterns.parts.ComplexParameter>
+            <qualifiedTypeName>com.nat_spec.examples.airline.persistence.entity.Flight</qualifiedTypeName>
+            <simpleTypeName>Flight</simpleTypeName>
+          </de.devboost.natspec.testscripting.patterns.parts.ComplexParameter>
+        </c>
+        <list reference="../c"/>
+      </parts>
+      <partToParameterIndexMap class="linked-hash-map">
+        <entry>
+          <de.devboost.natspec.testscripting.patterns.parts.ComplexParameter reference="../../../parts/c/de.devboost.natspec.testscripting.patterns.parts.ComplexParameter"/>
+          <int>0</int>
+        </entry>
+        <entry>
+          <de.devboost.natspec.testscripting.patterns.parts.ComplexParameter reference="../../../parts/c/de.devboost.natspec.testscripting.patterns.parts.ComplexParameter[2]"/>
+          <int>1</int>
+        </entry>
+      </partToParameterIndexMap>
+      <parameters>
+        <de.devboost.natspec.testscripting.java.model.JavaParameter>
+          <name>passenger</name>
+          <type>
+            <qualifiedName>com.nat_spec.examples.airline.persistence.entity.Passenger</qualifiedName>
+            <typeArguments/>
+            <superTypes class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+              <c class="empty-list"/>
+              <list class="empty-list"/>
+            </superTypes>
+            <allSuperTypeNames class="linked-hash-set">
+              <string>com.nat_spec.examples.airline.persistence.entity.Passenger</string>
+            </allSuperTypeNames>
+          </type>
+          <annotations/>
+        </de.devboost.natspec.testscripting.java.model.JavaParameter>
+        <de.devboost.natspec.testscripting.java.model.JavaParameter>
+          <name>flight</name>
+          <type>
+            <qualifiedName>com.nat_spec.examples.airline.persistence.entity.Flight</qualifiedName>
+            <typeArguments/>
+            <superTypes class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+              <c class="empty-list"/>
+              <list class="empty-list"/>
+            </superTypes>
+            <allSuperTypeNames class="linked-hash-set">
+              <string>com.nat_spec.examples.airline.persistence.entity.Flight</string>
+            </allSuperTypeNames>
+          </type>
+          <annotations/>
+        </de.devboost.natspec.testscripting.java.model.JavaParameter>
+      </parameters>
+      <codeGeneratorFactory class="de.devboost.natspec.testscripting.java.extract.JavaCodeGeneratorFactory" reference="../../de.devboost.natspec.testscripting.patterns.DynamicSyntaxPattern/codeGeneratorFactory"/>
+    </de.devboost.natspec.testscripting.patterns.DynamicSyntaxPattern>
+    <de.devboost.natspec.testscripting.patterns.DynamicSyntaxPattern>
+      <parameterFactory class="de.devboost.natspec.testscripting.java.extract.JavaParameterFactory" reference="../../de.devboost.natspec.testscripting.patterns.DynamicSyntaxPattern/parameterFactory"/>
+      <projectName>com.nat-spec.examples.airline.tests</projectName>
+      <qualifiedTypeName>com.nat_spec.examples.airline.test.TestSupport</qualifiedTypeName>
+      <methodName>cancelSeat</methodName>
+      <returnType class="de.devboost.natspec.testscripting.java.model.JavaType">
+        <qualifiedName>com.nat_spec.examples.airline.services.OperationStatus</qualifiedName>
+        <typeArguments/>
+        <superTypes class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+          <c class="list">
+            <de.devboost.natspec.testscripting.java.model.JavaType>
+              <qualifiedName>java.lang.Object</qualifiedName>
+              <typeArguments class="empty-list"/>
+              <superTypes class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+                <c class="list"/>
+                <list reference="../c"/>
+              </superTypes>
+            </de.devboost.natspec.testscripting.java.model.JavaType>
+          </c>
+          <list reference="../c"/>
+        </superTypes>
+        <allSuperTypeNames class="linked-hash-set">
+          <string>com.nat_spec.examples.airline.services.OperationStatus</string>
+          <string>java.lang.Object</string>
+        </allSuperTypeNames>
+      </returnType>
+      <parts class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+        <c class="list">
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>Cancel</text>
+            <wordMatcher>
+              <text>Cancel</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>seat</text>
+            <wordMatcher>
+              <text>seat</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>for</text>
+            <wordMatcher>
+              <text>for</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.testscripting.patterns.parts.ComplexParameter>
+            <qualifiedTypeName>com.nat_spec.examples.airline.persistence.entity.Passenger</qualifiedTypeName>
+            <simpleTypeName>Passenger</simpleTypeName>
+          </de.devboost.natspec.testscripting.patterns.parts.ComplexParameter>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>at</text>
+            <wordMatcher>
+              <text>at</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.testscripting.patterns.parts.ComplexParameter>
+            <qualifiedTypeName>com.nat_spec.examples.airline.persistence.entity.Flight</qualifiedTypeName>
+            <simpleTypeName>Flight</simpleTypeName>
+          </de.devboost.natspec.testscripting.patterns.parts.ComplexParameter>
+        </c>
+        <list reference="../c"/>
+      </parts>
+      <partToParameterIndexMap class="linked-hash-map">
+        <entry>
+          <de.devboost.natspec.testscripting.patterns.parts.ComplexParameter reference="../../../parts/c/de.devboost.natspec.testscripting.patterns.parts.ComplexParameter"/>
+          <int>0</int>
+        </entry>
+        <entry>
+          <de.devboost.natspec.testscripting.patterns.parts.ComplexParameter reference="../../../parts/c/de.devboost.natspec.testscripting.patterns.parts.ComplexParameter[2]"/>
+          <int>1</int>
+        </entry>
+      </partToParameterIndexMap>
+      <parameters>
+        <de.devboost.natspec.testscripting.java.model.JavaParameter>
+          <name>passenger</name>
+          <type>
+            <qualifiedName>com.nat_spec.examples.airline.persistence.entity.Passenger</qualifiedName>
+            <typeArguments/>
+            <superTypes class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+              <c class="empty-list"/>
+              <list class="empty-list"/>
+            </superTypes>
+            <allSuperTypeNames class="linked-hash-set">
+              <string>com.nat_spec.examples.airline.persistence.entity.Passenger</string>
+            </allSuperTypeNames>
+          </type>
+          <annotations/>
+        </de.devboost.natspec.testscripting.java.model.JavaParameter>
+        <de.devboost.natspec.testscripting.java.model.JavaParameter>
+          <name>flight</name>
+          <type>
+            <qualifiedName>com.nat_spec.examples.airline.persistence.entity.Flight</qualifiedName>
+            <typeArguments/>
+            <superTypes class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+              <c class="empty-list"/>
+              <list class="empty-list"/>
+            </superTypes>
+            <allSuperTypeNames class="linked-hash-set">
+              <string>com.nat_spec.examples.airline.persistence.entity.Flight</string>
+            </allSuperTypeNames>
+          </type>
+          <annotations/>
+        </de.devboost.natspec.testscripting.java.model.JavaParameter>
+      </parameters>
+      <codeGeneratorFactory class="de.devboost.natspec.testscripting.java.extract.JavaCodeGeneratorFactory" reference="../../de.devboost.natspec.testscripting.patterns.DynamicSyntaxPattern/codeGeneratorFactory"/>
+    </de.devboost.natspec.testscripting.patterns.DynamicSyntaxPattern>
+    <de.devboost.natspec.testscripting.patterns.DynamicSyntaxPattern>
+      <parameterFactory class="de.devboost.natspec.testscripting.java.extract.JavaParameterFactory" reference="../../de.devboost.natspec.testscripting.patterns.DynamicSyntaxPattern/parameterFactory"/>
+      <projectName>com.nat-spec.examples.airline.tests</projectName>
+      <qualifiedTypeName>com.nat_spec.examples.airline.test.TestSupport</qualifiedTypeName>
+      <methodName>givenAPassenger</methodName>
+      <returnType class="de.devboost.natspec.testscripting.java.model.JavaType">
+        <qualifiedName>com.nat_spec.examples.airline.persistence.entity.Passenger</qualifiedName>
+        <typeArguments/>
+        <superTypes class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+          <c class="list">
+            <de.devboost.natspec.testscripting.java.model.JavaType>
+              <qualifiedName>com.nat_spec.examples.airline.persistence.entity.Entity</qualifiedName>
+              <typeArguments class="empty-list"/>
+              <superTypes class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+                <c class="list">
+                  <de.devboost.natspec.testscripting.java.model.JavaType>
+                    <qualifiedName>java.lang.Object</qualifiedName>
+                    <typeArguments class="empty-list"/>
+                    <superTypes class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+                      <c class="list"/>
+                      <list reference="../c"/>
+                    </superTypes>
+                  </de.devboost.natspec.testscripting.java.model.JavaType>
+                </c>
+                <list reference="../c"/>
+              </superTypes>
+            </de.devboost.natspec.testscripting.java.model.JavaType>
+          </c>
+          <list reference="../c"/>
+        </superTypes>
+        <allSuperTypeNames class="linked-hash-set">
+          <string>com.nat_spec.examples.airline.persistence.entity.Passenger</string>
+          <string>com.nat_spec.examples.airline.persistence.entity.Entity</string>
+          <string>java.lang.Object</string>
+        </allSuperTypeNames>
+      </returnType>
+      <parts class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+        <c class="list">
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>Given</text>
+            <wordMatcher>
+              <text>Given</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>a</text>
+            <wordMatcher>
+              <text>a</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>Passenger</text>
+            <wordMatcher>
+              <text>Passenger</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.testscripting.patterns.parts.StringParameter>
+            <completionProposal>firstname</completionProposal>
+          </de.devboost.natspec.testscripting.patterns.parts.StringParameter>
+          <de.devboost.natspec.testscripting.patterns.parts.StringParameter>
+            <completionProposal>lastname</completionProposal>
+          </de.devboost.natspec.testscripting.patterns.parts.StringParameter>
+        </c>
+        <list reference="../c"/>
+      </parts>
+      <partToParameterIndexMap class="linked-hash-map">
+        <entry>
+          <de.devboost.natspec.testscripting.patterns.parts.StringParameter reference="../../../parts/c/de.devboost.natspec.testscripting.patterns.parts.StringParameter"/>
+          <int>0</int>
+        </entry>
+        <entry>
+          <de.devboost.natspec.testscripting.patterns.parts.StringParameter reference="../../../parts/c/de.devboost.natspec.testscripting.patterns.parts.StringParameter[2]"/>
+          <int>1</int>
+        </entry>
+      </partToParameterIndexMap>
+      <parameters>
+        <de.devboost.natspec.testscripting.java.model.JavaParameter>
+          <name>firstname</name>
+          <type>
+            <qualifiedName>java.lang.String</qualifiedName>
+            <typeArguments/>
+            <superTypes class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+              <c class="empty-list"/>
+              <list class="empty-list"/>
+            </superTypes>
+            <allSuperTypeNames class="linked-hash-set">
+              <string>java.lang.String</string>
+            </allSuperTypeNames>
+          </type>
+          <annotations/>
+        </de.devboost.natspec.testscripting.java.model.JavaParameter>
+        <de.devboost.natspec.testscripting.java.model.JavaParameter>
+          <name>lastname</name>
+          <type>
+            <qualifiedName>java.lang.String</qualifiedName>
+            <typeArguments/>
+            <superTypes class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+              <c class="empty-list"/>
+              <list class="empty-list"/>
+            </superTypes>
+            <allSuperTypeNames class="linked-hash-set">
+              <string>java.lang.String</string>
+            </allSuperTypeNames>
+          </type>
+          <annotations/>
+        </de.devboost.natspec.testscripting.java.model.JavaParameter>
+      </parameters>
+      <codeGeneratorFactory class="de.devboost.natspec.testscripting.java.extract.JavaCodeGeneratorFactory" reference="../../de.devboost.natspec.testscripting.patterns.DynamicSyntaxPattern/codeGeneratorFactory"/>
+    </de.devboost.natspec.testscripting.patterns.DynamicSyntaxPattern>
+    <de.devboost.natspec.testscripting.patterns.DynamicSyntaxPattern>
+      <parameterFactory class="de.devboost.natspec.testscripting.java.extract.JavaParameterFactory" reference="../../de.devboost.natspec.testscripting.patterns.DynamicSyntaxPattern/parameterFactory"/>
+      <projectName>com.nat-spec.examples.airline.tests</projectName>
+      <qualifiedTypeName>com.nat_spec.examples.airline.test.TestSupport</qualifiedTypeName>
+      <methodName>givenAnAirplane</methodName>
+      <returnType class="de.devboost.natspec.testscripting.java.model.JavaType">
+        <qualifiedName>com.nat_spec.examples.airline.persistence.entity.AirplaneType</qualifiedName>
+        <typeArguments/>
+        <superTypes class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+          <c class="list">
+            <de.devboost.natspec.testscripting.java.model.JavaType>
+              <qualifiedName>com.nat_spec.examples.airline.persistence.entity.NamedEntity</qualifiedName>
+              <typeArguments class="empty-list"/>
+              <superTypes class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+                <c class="list">
+                  <de.devboost.natspec.testscripting.java.model.JavaType>
+                    <qualifiedName>com.nat_spec.examples.airline.persistence.entity.Entity</qualifiedName>
+                    <typeArguments class="empty-list"/>
+                    <superTypes class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+                      <c class="list">
+                        <de.devboost.natspec.testscripting.java.model.JavaType>
+                          <qualifiedName>java.lang.Object</qualifiedName>
+                          <typeArguments class="empty-list"/>
+                          <superTypes class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+                            <c class="list"/>
+                            <list reference="../c"/>
+                          </superTypes>
+                        </de.devboost.natspec.testscripting.java.model.JavaType>
+                      </c>
+                      <list reference="../c"/>
+                    </superTypes>
+                  </de.devboost.natspec.testscripting.java.model.JavaType>
+                </c>
+                <list reference="../c"/>
+              </superTypes>
+            </de.devboost.natspec.testscripting.java.model.JavaType>
+          </c>
+          <list reference="../c"/>
+        </superTypes>
+        <allSuperTypeNames class="linked-hash-set">
+          <string>com.nat_spec.examples.airline.persistence.entity.AirplaneType</string>
+          <string>com.nat_spec.examples.airline.persistence.entity.NamedEntity</string>
+          <string>com.nat_spec.examples.airline.persistence.entity.Entity</string>
+          <string>java.lang.Object</string>
+        </allSuperTypeNames>
+      </returnType>
+      <parts class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+        <c class="list">
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>Given</text>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>an</text>
+            <wordMatcher>
+              <text>an</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>Airplane</text>
+            <wordMatcher>
+              <text>Airplane</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.testscripting.patterns.parts.StringParameter>
+            <completionProposal>airplaneType</completionProposal>
+          </de.devboost.natspec.testscripting.patterns.parts.StringParameter>
+        </c>
+        <list reference="../c"/>
+      </parts>
+      <partToParameterIndexMap class="linked-hash-map">
+        <entry>
+          <de.devboost.natspec.testscripting.patterns.parts.StringParameter reference="../../../parts/c/de.devboost.natspec.testscripting.patterns.parts.StringParameter"/>
+          <int>0</int>
+        </entry>
+      </partToParameterIndexMap>
+      <parameters>
+        <de.devboost.natspec.testscripting.java.model.JavaParameter>
+          <name>airplaneType</name>
+          <type>
+            <qualifiedName>java.lang.String</qualifiedName>
+            <typeArguments/>
+            <superTypes class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+              <c class="empty-list"/>
+              <list class="empty-list"/>
+            </superTypes>
+            <allSuperTypeNames class="linked-hash-set">
+              <string>java.lang.String</string>
+            </allSuperTypeNames>
+          </type>
+          <annotations/>
+        </de.devboost.natspec.testscripting.java.model.JavaParameter>
+      </parameters>
+      <codeGeneratorFactory class="de.devboost.natspec.testscripting.java.extract.JavaCodeGeneratorFactory" reference="../../de.devboost.natspec.testscripting.patterns.DynamicSyntaxPattern/codeGeneratorFactory"/>
+    </de.devboost.natspec.testscripting.patterns.DynamicSyntaxPattern>
+    <de.devboost.natspec.testscripting.patterns.DynamicSyntaxPattern>
+      <parameterFactory class="de.devboost.natspec.testscripting.java.extract.JavaParameterFactory" reference="../../de.devboost.natspec.testscripting.patterns.DynamicSyntaxPattern/parameterFactory"/>
+      <projectName>com.nat-spec.examples.airline.tests</projectName>
+      <qualifiedTypeName>com.nat_spec.examples.airline.test.TestSupport</qualifiedTypeName>
+      <methodName>givenAFlight</methodName>
+      <returnType class="de.devboost.natspec.testscripting.java.model.JavaType">
+        <qualifiedName>com.nat_spec.examples.airline.persistence.entity.Flight</qualifiedName>
+        <typeArguments/>
+        <superTypes class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+          <c class="list">
+            <de.devboost.natspec.testscripting.java.model.JavaType>
+              <qualifiedName>com.nat_spec.examples.airline.persistence.entity.NamedEntity</qualifiedName>
+              <typeArguments class="empty-list"/>
+              <superTypes class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+                <c class="list">
+                  <de.devboost.natspec.testscripting.java.model.JavaType>
+                    <qualifiedName>com.nat_spec.examples.airline.persistence.entity.Entity</qualifiedName>
+                    <typeArguments class="empty-list"/>
+                    <superTypes class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+                      <c class="list">
+                        <de.devboost.natspec.testscripting.java.model.JavaType>
+                          <qualifiedName>java.lang.Object</qualifiedName>
+                          <typeArguments class="empty-list"/>
+                          <superTypes class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+                            <c class="list"/>
+                            <list reference="../c"/>
+                          </superTypes>
+                        </de.devboost.natspec.testscripting.java.model.JavaType>
+                      </c>
+                      <list reference="../c"/>
+                    </superTypes>
+                  </de.devboost.natspec.testscripting.java.model.JavaType>
+                </c>
+                <list reference="../c"/>
+              </superTypes>
+            </de.devboost.natspec.testscripting.java.model.JavaType>
+          </c>
+          <list reference="../c"/>
+        </superTypes>
+        <allSuperTypeNames class="linked-hash-set">
+          <string>com.nat_spec.examples.airline.persistence.entity.Flight</string>
+          <string>com.nat_spec.examples.airline.persistence.entity.NamedEntity</string>
+          <string>com.nat_spec.examples.airline.persistence.entity.Entity</string>
+          <string>java.lang.Object</string>
+        </allSuperTypeNames>
+      </returnType>
+      <parts class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+        <c class="list">
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>Given</text>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>a</text>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>flight</text>
+            <wordMatcher>
+              <text>flight</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.testscripting.patterns.parts.StringParameter>
+            <completionProposal>flightName</completionProposal>
+          </de.devboost.natspec.testscripting.patterns.parts.StringParameter>
+        </c>
+        <list reference="../c"/>
+      </parts>
+      <partToParameterIndexMap class="linked-hash-map">
+        <entry>
+          <de.devboost.natspec.testscripting.patterns.parts.StringParameter reference="../../../parts/c/de.devboost.natspec.testscripting.patterns.parts.StringParameter"/>
+          <int>0</int>
+        </entry>
+      </partToParameterIndexMap>
+      <parameters>
+        <de.devboost.natspec.testscripting.java.model.JavaParameter>
+          <name>flightName</name>
+          <type>
+            <qualifiedName>java.lang.String</qualifiedName>
+            <typeArguments/>
+            <superTypes class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+              <c class="empty-list"/>
+              <list class="empty-list"/>
+            </superTypes>
+            <allSuperTypeNames class="linked-hash-set">
+              <string>java.lang.String</string>
+            </allSuperTypeNames>
+          </type>
+          <annotations/>
+        </de.devboost.natspec.testscripting.java.model.JavaParameter>
+      </parameters>
+      <codeGeneratorFactory class="de.devboost.natspec.testscripting.java.extract.JavaCodeGeneratorFactory" reference="../../de.devboost.natspec.testscripting.patterns.DynamicSyntaxPattern/codeGeneratorFactory"/>
+    </de.devboost.natspec.testscripting.patterns.DynamicSyntaxPattern>
+    <de.devboost.natspec.testscripting.patterns.DynamicSyntaxPattern>
+      <parameterFactory class="de.devboost.natspec.testscripting.java.extract.JavaParameterFactory" reference="../../de.devboost.natspec.testscripting.patterns.DynamicSyntaxPattern/parameterFactory"/>
+      <projectName>com.nat-spec.examples.airline.tests</projectName>
+      <qualifiedTypeName>com.nat_spec.examples.airline.test.TestSupport</qualifiedTypeName>
+      <methodName>withAirplane</methodName>
+      <parts class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+        <c class="list">
+          <de.devboost.natspec.testscripting.patterns.parts.ImplicitParameter>
+            <qualifiedTypeName>com.nat_spec.examples.airline.persistence.entity.Flight</qualifiedTypeName>
+            <simpleTypeName>Flight</simpleTypeName>
+            <considerLastObjectOnly>false</considerLastObjectOnly>
+          </de.devboost.natspec.testscripting.patterns.parts.ImplicitParameter>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>that</text>
+            <wordMatcher>
+              <text>that</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>is</text>
+            <wordMatcher>
+              <text>is</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>executed</text>
+            <wordMatcher>
+              <text>executed</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>using</text>
+            <wordMatcher>
+              <text>using</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>a</text>
+            <wordMatcher>
+              <text>a</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.testscripting.patterns.parts.ComplexParameter>
+            <qualifiedTypeName>com.nat_spec.examples.airline.persistence.entity.AirplaneType</qualifiedTypeName>
+            <simpleTypeName>AirplaneType</simpleTypeName>
+          </de.devboost.natspec.testscripting.patterns.parts.ComplexParameter>
+        </c>
+        <list reference="../c"/>
+      </parts>
+      <partToParameterIndexMap class="linked-hash-map">
+        <entry>
+          <de.devboost.natspec.testscripting.patterns.parts.ComplexParameter reference="../../../parts/c/de.devboost.natspec.testscripting.patterns.parts.ComplexParameter"/>
+          <int>0</int>
+        </entry>
+        <entry>
+          <de.devboost.natspec.testscripting.patterns.parts.ImplicitParameter reference="../../../parts/c/de.devboost.natspec.testscripting.patterns.parts.ImplicitParameter"/>
+          <int>1</int>
+        </entry>
+      </partToParameterIndexMap>
+      <parameters>
+        <de.devboost.natspec.testscripting.java.model.JavaParameter>
+          <name>airplaneType</name>
+          <type>
+            <qualifiedName>com.nat_spec.examples.airline.persistence.entity.AirplaneType</qualifiedName>
+            <typeArguments/>
+            <superTypes class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+              <c class="empty-list"/>
+              <list class="empty-list"/>
+            </superTypes>
+            <allSuperTypeNames class="linked-hash-set">
+              <string>com.nat_spec.examples.airline.persistence.entity.AirplaneType</string>
+            </allSuperTypeNames>
+          </type>
+          <annotations/>
+        </de.devboost.natspec.testscripting.java.model.JavaParameter>
+        <de.devboost.natspec.testscripting.java.model.JavaParameter>
+          <name>flight</name>
+          <type>
+            <qualifiedName>com.nat_spec.examples.airline.persistence.entity.Flight</qualifiedName>
+            <typeArguments/>
+            <superTypes class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+              <c class="empty-list"/>
+              <list class="empty-list"/>
+            </superTypes>
+            <allSuperTypeNames class="linked-hash-set">
+              <string>com.nat_spec.examples.airline.persistence.entity.Flight</string>
+            </allSuperTypeNames>
+          </type>
+          <annotations/>
+        </de.devboost.natspec.testscripting.java.model.JavaParameter>
+      </parameters>
+      <codeGeneratorFactory class="de.devboost.natspec.testscripting.java.extract.JavaCodeGeneratorFactory" reference="../../de.devboost.natspec.testscripting.patterns.DynamicSyntaxPattern/codeGeneratorFactory"/>
+    </de.devboost.natspec.testscripting.patterns.DynamicSyntaxPattern>
+    <de.devboost.natspec.testscripting.patterns.DynamicSyntaxPattern>
+      <parameterFactory class="de.devboost.natspec.testscripting.java.extract.JavaParameterFactory" reference="../../de.devboost.natspec.testscripting.patterns.DynamicSyntaxPattern/parameterFactory"/>
+      <projectName>com.nat-spec.examples.airline.tests</projectName>
+      <qualifiedTypeName>com.nat_spec.examples.airline.test.TestSupport</qualifiedTypeName>
+      <methodName>withFreeSeats</methodName>
+      <parts class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+        <c class="list">
+          <de.devboost.natspec.testscripting.patterns.parts.ImplicitParameter>
+            <qualifiedTypeName>com.nat_spec.examples.airline.persistence.entity.Flight</qualifiedTypeName>
+            <simpleTypeName>Flight</simpleTypeName>
+            <considerLastObjectOnly>false</considerLastObjectOnly>
+          </de.devboost.natspec.testscripting.patterns.parts.ImplicitParameter>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>With</text>
+            <wordMatcher>
+              <text>With</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.patterns.parts.IntegerArgument/>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>free</text>
+            <wordMatcher>
+              <text>free</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>seats</text>
+            <wordMatcher>
+              <text>seats</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+        </c>
+        <list reference="../c"/>
+      </parts>
+      <partToParameterIndexMap class="linked-hash-map">
+        <entry>
+          <de.devboost.natspec.patterns.parts.IntegerArgument reference="../../../parts/c/de.devboost.natspec.patterns.parts.IntegerArgument"/>
+          <int>0</int>
+        </entry>
+        <entry>
+          <de.devboost.natspec.testscripting.patterns.parts.ImplicitParameter reference="../../../parts/c/de.devboost.natspec.testscripting.patterns.parts.ImplicitParameter"/>
+          <int>1</int>
+        </entry>
+      </partToParameterIndexMap>
+      <parameters>
+        <de.devboost.natspec.testscripting.java.model.JavaParameter>
+          <name>numberOfSeats</name>
+          <type>
+            <qualifiedName>int</qualifiedName>
+            <typeArguments/>
+            <superTypes class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+              <c class="empty-list"/>
+              <list class="empty-list"/>
+            </superTypes>
+            <allSuperTypeNames class="linked-hash-set">
+              <string>int</string>
+            </allSuperTypeNames>
+          </type>
+          <annotations/>
+        </de.devboost.natspec.testscripting.java.model.JavaParameter>
+        <de.devboost.natspec.testscripting.java.model.JavaParameter>
+          <name>flight</name>
+          <type>
+            <qualifiedName>com.nat_spec.examples.airline.persistence.entity.Flight</qualifiedName>
+            <typeArguments/>
+            <superTypes class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+              <c class="empty-list"/>
+              <list class="empty-list"/>
+            </superTypes>
+            <allSuperTypeNames class="linked-hash-set">
+              <string>com.nat_spec.examples.airline.persistence.entity.Flight</string>
+            </allSuperTypeNames>
+          </type>
+          <annotations/>
+        </de.devboost.natspec.testscripting.java.model.JavaParameter>
+      </parameters>
+      <codeGeneratorFactory class="de.devboost.natspec.testscripting.java.extract.JavaCodeGeneratorFactory" reference="../../de.devboost.natspec.testscripting.patterns.DynamicSyntaxPattern/codeGeneratorFactory"/>
+    </de.devboost.natspec.testscripting.patterns.DynamicSyntaxPattern>
+    <de.devboost.natspec.testscripting.patterns.DynamicSyntaxPattern>
+      <parameterFactory class="de.devboost.natspec.testscripting.java.extract.JavaParameterFactory" reference="../../de.devboost.natspec.testscripting.patterns.DynamicSyntaxPattern/parameterFactory"/>
+      <projectName>com.nat-spec.examples.airline.tests</projectName>
+      <qualifiedTypeName>com.nat_spec.examples.airline.test.TestSupport</qualifiedTypeName>
+      <methodName>assumeAValidTicketIsIssued</methodName>
+      <parts class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+        <c class="list">
+          <de.devboost.natspec.testscripting.patterns.parts.ImplicitParameter>
+            <qualifiedTypeName>com.nat_spec.examples.airline.services.OperationStatus</qualifiedTypeName>
+            <simpleTypeName>OperationStatus</simpleTypeName>
+            <considerLastObjectOnly>false</considerLastObjectOnly>
+          </de.devboost.natspec.testscripting.patterns.parts.ImplicitParameter>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>Assume</text>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>a</text>
+            <wordMatcher>
+              <text>a</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>valid</text>
+            <wordMatcher>
+              <text>valid</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>ticket</text>
+            <wordMatcher>
+              <text>ticket</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>is</text>
+            <wordMatcher>
+              <text>is</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>issued</text>
+            <wordMatcher>
+              <text>issued</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+        </c>
+        <list reference="../c"/>
+      </parts>
+      <partToParameterIndexMap class="linked-hash-map">
+        <entry>
+          <de.devboost.natspec.testscripting.patterns.parts.ImplicitParameter reference="../../../parts/c/de.devboost.natspec.testscripting.patterns.parts.ImplicitParameter"/>
+          <int>0</int>
+        </entry>
+      </partToParameterIndexMap>
+      <parameters>
+        <de.devboost.natspec.testscripting.java.model.JavaParameter>
+          <name>status</name>
+          <type>
+            <qualifiedName>com.nat_spec.examples.airline.services.OperationStatus</qualifiedName>
+            <typeArguments/>
+            <superTypes class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+              <c class="empty-list"/>
+              <list class="empty-list"/>
+            </superTypes>
+            <allSuperTypeNames class="linked-hash-set">
+              <string>com.nat_spec.examples.airline.services.OperationStatus</string>
+            </allSuperTypeNames>
+          </type>
+          <annotations/>
+        </de.devboost.natspec.testscripting.java.model.JavaParameter>
+      </parameters>
+      <codeGeneratorFactory class="de.devboost.natspec.testscripting.java.extract.JavaCodeGeneratorFactory" reference="../../de.devboost.natspec.testscripting.patterns.DynamicSyntaxPattern/codeGeneratorFactory"/>
+    </de.devboost.natspec.testscripting.patterns.DynamicSyntaxPattern>
+    <de.devboost.natspec.testscripting.patterns.DynamicSyntaxPattern>
+      <parameterFactory class="de.devboost.natspec.testscripting.java.extract.JavaParameterFactory" reference="../../de.devboost.natspec.testscripting.patterns.DynamicSyntaxPattern/parameterFactory"/>
+      <projectName>com.nat-spec.examples.airline.tests</projectName>
+      <qualifiedTypeName>com.nat_spec.examples.airline.test.TestSupport</qualifiedTypeName>
+      <methodName>assumeCancellationSuccessful</methodName>
+      <parts class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+        <c class="list">
+          <de.devboost.natspec.testscripting.patterns.parts.ImplicitParameter>
+            <qualifiedTypeName>com.nat_spec.examples.airline.services.OperationStatus</qualifiedTypeName>
+            <simpleTypeName>OperationStatus</simpleTypeName>
+            <considerLastObjectOnly>false</considerLastObjectOnly>
+          </de.devboost.natspec.testscripting.patterns.parts.ImplicitParameter>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>Assume</text>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>cancellation</text>
+            <wordMatcher>
+              <text>cancellation</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>successful</text>
+            <wordMatcher>
+              <text>successful</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+        </c>
+        <list reference="../c"/>
+      </parts>
+      <partToParameterIndexMap class="linked-hash-map">
+        <entry>
+          <de.devboost.natspec.testscripting.patterns.parts.ImplicitParameter reference="../../../parts/c/de.devboost.natspec.testscripting.patterns.parts.ImplicitParameter"/>
+          <int>0</int>
+        </entry>
+      </partToParameterIndexMap>
+      <parameters>
+        <de.devboost.natspec.testscripting.java.model.JavaParameter>
+          <name>status</name>
+          <type>
+            <qualifiedName>com.nat_spec.examples.airline.services.OperationStatus</qualifiedName>
+            <typeArguments/>
+            <superTypes class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+              <c class="empty-list"/>
+              <list class="empty-list"/>
+            </superTypes>
+            <allSuperTypeNames class="linked-hash-set">
+              <string>com.nat_spec.examples.airline.services.OperationStatus</string>
+            </allSuperTypeNames>
+          </type>
+          <annotations/>
+        </de.devboost.natspec.testscripting.java.model.JavaParameter>
+      </parameters>
+      <codeGeneratorFactory class="de.devboost.natspec.testscripting.java.extract.JavaCodeGeneratorFactory" reference="../../de.devboost.natspec.testscripting.patterns.DynamicSyntaxPattern/codeGeneratorFactory"/>
+    </de.devboost.natspec.testscripting.patterns.DynamicSyntaxPattern>
+    <de.devboost.natspec.testscripting.patterns.DynamicSyntaxPattern>
+      <parameterFactory class="de.devboost.natspec.testscripting.java.extract.JavaParameterFactory" reference="../../de.devboost.natspec.testscripting.patterns.DynamicSyntaxPattern/parameterFactory"/>
+      <projectName>com.nat-spec.examples.airline.tests</projectName>
+      <qualifiedTypeName>com.nat_spec.examples.airline.test.TestSupport</qualifiedTypeName>
+      <methodName>helloImIlja</methodName>
+      <parts class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+        <c class="list">
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>Hello,</text>
+            <wordMatcher>
+              <text>Hello,</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>I&apos;m</text>
+            <wordMatcher>
+              <text>I&apos;m</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+          <de.devboost.natspec.patterns.parts.StaticWord>
+            <text>Ilja</text>
+            <wordMatcher>
+              <text>Ilja</text>
+            </wordMatcher>
+          </de.devboost.natspec.patterns.parts.StaticWord>
+        </c>
+        <list reference="../c"/>
+      </parts>
+      <partToParameterIndexMap class="linked-hash-map"/>
+      <parameters/>
+      <codeGeneratorFactory class="de.devboost.natspec.testscripting.java.extract.JavaCodeGeneratorFactory" reference="../../de.devboost.natspec.testscripting.patterns.DynamicSyntaxPattern/codeGeneratorFactory"/>
+    </de.devboost.natspec.testscripting.patterns.DynamicSyntaxPattern>
+  </linked-list>
+</object-stream>
