@@ -242,5 +242,10 @@
  /tmp/repositories/TypicalRepo_20150128063117/sentencefile80.txt
  /tmp/repositories/TypicalRepo_20150128064435/sentencefile84.txt
  /tmp/repositories/TypicalRepo_20150128064831/sentencefile85.txt
+<<<<<<< HEAD
  /tmp/repositories/TypicalRepo_20150128063621/sentencefile82.txt
+ /tmp/repositories/TypicalRepo_20150128063621/sentencefile82.txt
+=======
+ /tmp/repositories/TypicalRepo_20150128063754/sentencefile83.txt
+>>>>>>> branch 'master' of https://github.com/seomin/TypicalRepo
  /tmp/repositories/TypicalRepo_20150128063621/sentencefile82.txt
